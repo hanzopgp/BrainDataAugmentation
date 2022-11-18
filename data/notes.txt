@@ -1,0 +1,39 @@
+# General
+
+experiment task : standard visual oddball task + EEG
+n : 18 subjects
+X : EEG signal
+y : periods of interest
+goal : highlight periods of interest in unlabeled EEG signal
+
+# Dataset
+
+VEP --> PREP --> MARA --> VEPESS DATASET
+
+samples : a featureSize x numberFeatures array with containing the actual feature vectors
+labels : cell array containing the labels for the overlapping features windows. The labels are "34", "35" or empty. The label 34 corresponds to display of a "friend" or non-target image
+
+# Explanation from paper
+
+VEPESS dataset: the set contains visually evoked potentials from 18 subjects recorded by the
+authors of Robbins et al. (2018). The measurements were done by following the oddball paradigm.
+Subjects were presented with sequences of images that consisted of target and non-target types.
+Based on the type of the shown image, the subjects had to push the corresponding buttons. Data
+were recorded with an EEG device with 64 + 6 electrodes in the 10-20 standard configuration and
+sampled at 512 Hz. In this work, we use raw measurements. Signals were band-pass filtered from
+1 - 40 Hz with a zero-phase filter, and epochs were extracted between [0, 1] seconds from the onset
+of the target/non-target image. The epochs were normalized by channel-wise mean subtraction and
+deviation division into the range [−1., 1.].
+
+BCI Competition IV Dataset IIa (BCIC4D2a): the set contains motor imagery signals from
+9 participants. The subjects were asked to imagine the movement of their left and right hand, also
+their feet and tongue, for a couple of seconds after the instruction cue were presented on their screen.
+Data was recorded from 22 EEG and 3 EOG channels following the 10-20 standard system. The
+measurements were sampled at 250 Hz and band-pass filtered from 0.5 - 100 Hz. Furthermore, a
+notch filter at 50 Hz was applied to eliminate the line noise. We further band-pass filtered the signals
+between 4 - 38 Hz with a zero-phase filter and down-sampled them to 128 Hz. Following the work
+of , we extracted epochs from the recordings between [0.5, 4] seconds from the onset of the cue and
+normalized them by channel-wise mean subtraction and deviation division. We excluded samples
+marked as rejected due to artifacts by the publishers of the set.
+
+

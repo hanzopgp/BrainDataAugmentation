@@ -1,0 +1,4 @@
+stratified split : 0.7/0.15/0.15
+optimizer : adam
+lr : 1e-3
+early-stopping : valid_loss
