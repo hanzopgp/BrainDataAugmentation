@@ -68,7 +68,8 @@ class Distillation(Module):
 def distill(model, device, train_dl, val_dl, optimizer, config, wandb):
 	for iteration in range(1,1+config.NB_DISTILLS):
 		distillation = Distillation(model)
-		for epoch in range(1,1+config.EPOCHS):
+		nb_epochs = 2*config.EPOCHS if config.NB_DISTILLS-iteration<2 else config.EPOCHS
+		for epoch in range(1,1+nb_epochs):
 			train(distillation, iteration, device, train_dl, optimizer, wandb, config.CLASS_CONDITIONING, config.SUBJECT_CONDITIONING)
 			val(distillation, iteration, device, val_dl, wandb, config.CLASS_CONDITIONING, config.SUBJECT_CONDITIONING)
 			savepath = Path(f"diffusion/checkpoints/distilled_{distillation.student.T}_{config.SEED}_{epoch}.pch")
@@ -77,10 +78,11 @@ def distill(model, device, train_dl, val_dl, optimizer, config, wandb):
 	return model
 
 def train(distillation, iteration, device, dataloader, optimizer, wandb, class_conditioning, subject_conditioning):
+	distillation.student.train()
 	for i, (x,cl,sj) in tqdm(enumerate(dataloader),total=len(dataloader)):
 		x = x.to(device,dtype=torch.float32)
-		cl = cl.to(device,dtype=torch.float32) if class_conditioning else None
-		sj = sj.to(device,dtype=torch.float32) if subject_conditioning else None
+		cl = cl.to(device,dtype=torch.long) if class_conditioning else None
+		sj = sj.to(device,dtype=torch.long) if subject_conditioning else None
 		l, (x_tilde, pred, mse) = distillation.compute_loss(x, cl, sj)
 		wandb.log({
 				f"train {iteration} loss": l.item(),
@@ -95,11 +97,12 @@ def train(distillation, iteration, device, dataloader, optimizer, wandb, class_c
 		optimizer.step()
 
 def val(distillation, iteration, device, dataloader, wandb, class_conditioning, subject_conditioning):
+	distillation.student.eval()
 	with torch.no_grad():
 		for i, (x,cl,sj) in tqdm(enumerate(dataloader),total=len(dataloader)):
 			x = x.to(device,dtype=torch.float32)
-			cl = cl.to(device,dtype=torch.float32) if class_conditioning else None
-			sj = sj.to(device,dtype=torch.float32) if subject_conditioning else None
+			cl = cl.to(device,dtype=torch.long) if class_conditioning else None
+			sj = sj.to(device,dtype=torch.long) if subject_conditioning else None
 			l, (_, _, mse) = distillation.compute_loss(x, cl, sj)
 			wandb.log({
 					f"val {iteration} loss": l.item(),

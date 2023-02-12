@@ -76,7 +76,7 @@ class Diffusion(Module):
 		l = (w*mse).mean()
 		return l, (z, torch.clip(pred,-1,1), mse.mean())
 
-	def _step_sampling(self, s, t, zt, gamma, cl=None, sj=None):
+	def _step_sampling(self, s, t, zt, gamma, cl=None, sj=None, last_step=False):
 		alpha_t, sigma_t, lambd_t, _ = self._schedule(t)
 		alpha_s, sigma_s, lambd_s, _ = self._schedule(s)
 		_shape = (zt.size(0),*(1,)*(len(zt.shape)-1))
@@ -93,7 +93,7 @@ class Diffusion(Module):
 		std = torch.exp(log_std)
 		# sample
 		epsilon = torch.normal(0,1,zt.shape,device=zt.device)
-		zs = mean + std.view(_shape) * epsilon
+		zs = mean + std.view(_shape) * epsilon if not last_step else mean
 		zs = torch.clip(zs,-1,1)
 		return zs
 
@@ -104,7 +104,8 @@ class Diffusion(Module):
 				z = self._step_sampling(
 					torch.ones(init_z.size(0),device=init_z.device) * (t-1/self.T),
 					torch.ones(init_z.size(0),device=init_z.device) * t,
-					z,gamma,cl,sj
+					z,gamma,cl,sj,
+					t<=1/self.T
 				)
 		return z
 
@@ -115,10 +116,11 @@ class Diffusion(Module):
 		return self.ancestral_sampling(init_z, gamma=gamma, cl=class_conditioning, sj=subject_conditioning)
 
 def train(model, device, dataloader, optimizer, wandb, class_conditioning, subject_conditioning):
+	model.train()
 	for i, (x,cl,sj) in tqdm(enumerate(dataloader),total=len(dataloader)):
 		x = x.to(device,dtype=torch.float32)
-		cl = cl.to(device,dtype=torch.float32) if class_conditioning else None
-		sj = sj.to(device,dtype=torch.float32) if subject_conditioning else None
+		cl = cl.to(device,dtype=torch.long) if class_conditioning else None
+		sj = sj.to(device,dtype=torch.long) if subject_conditioning else None
 		l, (z, pred, mse) = model.compute_loss(x, cl, sj)
 		wandb.log({
 				"train diffusion loss": l.item(),
@@ -133,20 +135,14 @@ def train(model, device, dataloader, optimizer, wandb, class_conditioning, subje
 		optimizer.step()
 
 def val(model, device, dataloader, wandb, class_conditioning, subject_conditioning):
+	model.eval()
 	with torch.no_grad():
 		for i, (x,cl,sj) in tqdm(enumerate(dataloader),total=len(dataloader)):
 			x = x.to(device,dtype=torch.float32)
-			cl = cl.to(device,dtype=torch.float32) if class_conditioning else None
-			sj = sj.to(device,dtype=torch.float32) if subject_conditioning else None
+			cl = cl.to(device,dtype=torch.long) if class_conditioning else None
+			sj = sj.to(device,dtype=torch.long) if subject_conditioning else None
 			l, (_, _, mse) = model.compute_loss(x, cl, sj)
 			wandb.log({
 					"val diffusion loss": l.item(),
 					"val mse loss": mse.item(),
 				})
-
-def run(model, device, train_dl, val_dl, optimizer, config, wandb):
-	for epoch in range(1,1+config.EPOCHS):
-		train(model, device, train_dl, optimizer, wandb, config.CLASS_CONDITIONING, config.SUBJECT_CONDITIONING)
-		val(model, device, val_dl, wandb, config.CLASS_CONDITIONING, config.SUBJECT_CONDITIONING)
-		savepath = Path(f"diffusion/checkpoints/diffusion_{config.SEED}_{epoch}.pch")
-		save_checkpoint(epoch, config, model, savepath)

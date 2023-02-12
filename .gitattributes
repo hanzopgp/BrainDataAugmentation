@@ -1,0 +1,5 @@
+sampled/*.pt filter=lfs diff=lfs merge=lfs -text
+data/BCICIV_2a_gdf/* filter=lfs diff=lfs merge=lfs -text
+data/VEPESS/* filter=lfs diff=lfs merge=lfs -text
+data/pt_vepess/*.pt filter=lfs diff=lfs merge=lfs -text
+data/pt_bciciv/*.pt filter=lfs diff=lfs merge=lfs -text

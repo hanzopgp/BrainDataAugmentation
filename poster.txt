@@ -1,0 +1,18 @@
+Draft for poster content:
+
+Data: brain signal (image)
+
+Task: classification
+-> Need generate data for augmentation
+-> Generative modelling
+-> Diffusion models
+
+Model:
+	EEG signal feature extraction: EEGNet (image)
+	Generative model: Variational Diffusion model (1000+ steps) (image of graphical model in DDIM paper)
+	+ Distillation for fast sampling (4 steps or single step) (figure 1 in original paper)
+
+Results:
+Section 5.2: 2 tables (bonus image)
+Section 5.3: heat map
+Section 5.4: confusion matrix

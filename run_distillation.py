@@ -31,7 +31,7 @@ print("Initialize")
 with open("diffusion/distillation_conf.json",'r') as fconf:
 	conf = json.load(fconf)
 
-wandb.init(project="amal_diffusion",config=conf)
+wandb.init(project="amal_diffusion",entity="amal_2223",config=conf)
 random_seed = np.random.choice(9999)
 config = wandb.config
 config.SEED = random_seed
@@ -41,21 +41,20 @@ torch.backends.cudnn.deterministic = True
 
 print("Loading data")
 if config.DATA == 'VEPESS':
-	ds = VepessDataset(config.N_SUBJECTS,True)
+	train_ds = VepessDataset(config.N_SUBJECTS,True,partition='train')
+	val_ds = VepessDataset(config.N_SUBJECTS,True,partition='val')
+	test_ds = VepessDataset(config.N_SUBJECTS,True,partition='test')
 	SIGNAL_LENGTH = 512
 else:
-	ds = BCICIV2aDataset(config.N_SUBJECTS,True)
+	train_ds = BCICIV2aDataset(config.N_SUBJECTS,True,partition='train')
+	val_ds = BCICIV2aDataset(config.N_SUBJECTS,True,partition='val')
+	test_ds = BCICIV2aDataset(config.N_SUBJECTS,True,partition='test')
 	SIGNAL_LENGTH = 448
 
 teacher_path = Path(f"{os.path.dirname(os.path.abspath(__file__))}/diffusion/checkpoints/diffusion_{config.TEACHER}.pch")
 _, _, model = load_checkpoint(teacher_path ,device)
 optimizer = torch.optim.Adam(model.parameters(), config.LEARNING_RATE)
 wandb.watch(model, log="all")
-train_ds, val_ds, test_ds = random_split(ds, [
-		int(len(ds)*config.SPLIT[0]),
-		int(len(ds)*config.SPLIT[1]),
-		len(ds) - int(len(ds)*config.SPLIT[0]) - int(len(ds)*config.SPLIT[1])
-	])
 train_dl = DataLoader(train_ds,batch_size=config.TRAIN_BATCH_SIZE,shuffle=True)
 val_dl = DataLoader(val_ds,batch_size=config.EVAL_BATCH_SIZE,shuffle=False)
 test_dl = DataLoader(test_ds,batch_size=config.EVAL_BATCH_SIZE,shuffle=False)
