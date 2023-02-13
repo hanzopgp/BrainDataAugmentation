@@ -1,0 +1,555 @@
+%!Adobe-FontList 1.23
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/AdobeFnt23.lst
+FileLength:12486
+FileModTime:697945679
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MaisonMono-Medium
+FamilyName:Maison Mono
+StyleName:Medium
+MenuName:Maison Mono Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Maison Mono Medium
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/MaisonMono-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:52859
+FileModTime:573429600
+NameArray:0,Mac,4,Maison Mono Medium
+NameArray:0,Win,1,Maison Mono Medium
+NameArray:0,Win,16,Maison Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MonumentExtended-Black
+FamilyName:Monument Extended
+StyleName:Black
+MenuName:Monument Extended Black
+StyleBits:0
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Monument Extended Black
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/MonumentExtended-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:63340
+FileModTime:623682253
+NameArray:0,Mac,4,Monument Extended Black
+NameArray:0,Win,1,Monument Extended Black
+NameArray:0,Win,16,Monument Extended
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MonumentExtended-Bold
+FamilyName:Monument Extended
+StyleName:Bold
+MenuName:Monument Extended
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Monument Extended Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/MonumentExtended-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:42284
+FileModTime:623682270
+NameArray:0,Mac,4,Monument Extended Bold
+NameArray:0,Win,1,Monument Extended
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MonumentExtended-Regular
+FamilyName:Monument Extended
+StyleName:Regular
+MenuName:Monument Extended
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Monument Extended Regular
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/MonumentExtended-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:42156
+FileModTime:623682269
+NameArray:0,Mac,4,Monument Extended Regular
+NameArray:0,Win,1,Monument Extended
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:NeueMontreal-Bold
+FamilyName:Neue Montreal
+StyleName:Bold
+MenuName:Neue Montreal
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Neue Montreal Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/NeueMontreal-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:42935
+FileModTime:544362900
+NameArray:0,Mac,4,Neue Montreal Bold
+NameArray:0,Win,1,Neue Montreal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tartuffo-Bold
+FamilyName:Tartuffo
+StyleName:Bold
+MenuName:Tartuffo Bold
+StyleBits:0
+WeightClass:700
+WidthClass:4
+AngleClass:0
+FullName:Tartuffo Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Tartuffo-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:334817
+FileModTime:646087940
+NameArray:0,Mac,4,Tartuffo Bold
+NameArray:0,Win,1,Tartuffo Bold
+NameArray:0,Win,16,Tartuffo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniversLTStd-Bold
+FamilyName:Univers LT Std
+StyleName:65 Bold
+MenuName:Univers LT Std 45 Light
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Univers LT Std 65 Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/UniversLTStd-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36368
+FileModTime:608123700
+DesignSize:120
+NameArray:0,Mac,4,Univers LT Std 65 Bold
+NameArray:0,Win,1,Univers LT Std 45 Light
+NameArray:0,Win,16,Univers LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniversLTStd-Obl
+FamilyName:Univers LT Std
+StyleName:55 Oblique
+MenuName:Univers LT Std 55
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Univers LT Std 55 Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/UniversLTStd-Obl.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36432
+FileModTime:608123700
+DesignSize:120
+NameArray:0,Mac,18,Univers LT Std 55 Obl
+NameArray:0,Mac,4,Univers LT Std 55 Oblique
+NameArray:0,Win,1,Univers LT Std 55
+NameArray:0,Win,16,Univers LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:UniversLTStd
+FamilyName:Univers LT Std
+StyleName:55 Roman
+MenuName:Univers LT Std 55
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Univers LT Std 55 Roman
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/UniversLTStd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:35100
+FileModTime:608123700
+DesignSize:120
+NameArray:0,Mac,18,Univers LT Std 55
+NameArray:0,Mac,4,Univers LT Std 55 Roman
+NameArray:0,Win,1,Univers LT Std 55
+NameArray:0,Win,16,Univers LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Black
+FamilyName:Avenir
+StyleName:Black
+MenuName:Avenir Black
+StyleBits:2
+WeightClass:800
+WidthClass:5
+AngleClass:0
+FullName:Avenir Black
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:704
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Black
+NameArray:0,Mac,4,Avenir Black
+NameArray:0,Win,1,Avenir Black
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-BlackOblique
+FamilyName:Avenir
+StyleName:Black Oblique
+MenuName:Avenir Black Oblique
+StyleBits:3
+WeightClass:800
+WidthClass:5
+AngleClass:1
+FullName:Avenir Black Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:1004
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Black Oblique
+NameArray:0,Mac,4,Avenir Black Oblique
+NameArray:0,Win,1,Avenir Black Oblique
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Book
+FamilyName:Avenir
+StyleName:Book
+MenuName:Avenir Book
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Book
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:72
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Book
+NameArray:0,Mac,4,Avenir Book
+NameArray:0,Win,1,Avenir Book
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-BookOblique
+FamilyName:Avenir
+StyleName:Book Oblique
+MenuName:Avenir Book
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir Book Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:388
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Book Oblique
+NameArray:0,Mac,4,Avenir Book Oblique
+NameArray:0,Win,1,Avenir Book
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Heavy
+FamilyName:Avenir
+StyleName:Heavy
+MenuName:Avenir Heavy
+StyleBits:2
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Avenir Heavy
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:1304
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Heavy
+NameArray:0,Mac,4,Avenir Heavy
+NameArray:0,Win,1,Avenir Heavy
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-HeavyOblique
+FamilyName:Avenir
+StyleName:Heavy Oblique
+MenuName:Avenir Heavy
+StyleBits:3
+WeightClass:900
+WidthClass:5
+AngleClass:1
+FullName:Avenir Heavy Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:1588
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Heavy Oblique
+NameArray:0,Mac,4,Avenir Heavy Oblique
+NameArray:0,Win,1,Avenir Heavy
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Light
+FamilyName:Avenir
+StyleName:Light
+MenuName:Avenir Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Avenir Light
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:1904
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Light
+NameArray:0,Mac,4,Avenir Light
+NameArray:0,Win,1,Avenir Light
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-LightOblique
+FamilyName:Avenir
+StyleName:Light Oblique
+MenuName:Avenir Light
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Avenir Light Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:2220
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Light Oblique
+NameArray:0,Mac,4,Avenir Light Oblique
+NameArray:0,Win,1,Avenir Light
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Medium
+FamilyName:Avenir
+StyleName:Medium
+MenuName:Avenir Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Avenir Medium
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:2536
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Medium
+NameArray:0,Mac,4,Avenir Medium
+NameArray:0,Win,1,Avenir Medium
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-MediumOblique
+FamilyName:Avenir
+StyleName:Medium Oblique
+MenuName:Avenir Medium
+StyleBits:1
+WeightClass:500
+WidthClass:5
+AngleClass:1
+FullName:Avenir Medium Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:2836
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Medium Oblique
+NameArray:0,Mac,4,Avenir Medium Oblique
+NameArray:0,Win,1,Avenir Medium
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Oblique
+FamilyName:Avenir
+StyleName:Oblique
+MenuName:Avenir
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir Oblique
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:3152
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Oblique
+NameArray:0,Mac,4,Avenir Oblique
+NameArray:0,Win,1,Avenir
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Roman
+FamilyName:Avenir
+StyleName:Roman
+MenuName:Avenir
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Roman
+WritingScript:Roman
+OutlineFileName:/Users/cecilearioli/Desktop/Dossier POSTER NZO/Document fonts/Avenir.ttc
+TTCOffset:3468
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1644004
+FileModTime:691673848
+NameArray:0,Mac,18,Avenir Roman
+NameArray:0,Mac,4,Avenir Roman
+NameArray:0,Win,1,Avenir
+NameArray:0,Win,16,Avenir
+%EndFont
+
